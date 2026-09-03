@@ -28,6 +28,11 @@ Room: WwBuddy — TryHackMe
 ### 1. Initial Enumeration
 The first step in any penetration test is to understand what services are exposed by the target.
 
+Using Nmap to enumerate the target with the nmap tags;
+```bash
+nmap -sC -sV -A target-ip
+```
+
 A basic Nmap scan reveals two interesting TCP ports:
 ```text
 22/tcp   open  ssh    OpenSSH 7.6p1 Ubuntu 4ubuntu0.3
